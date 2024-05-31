@@ -13,6 +13,7 @@ class TestHashTable(unittest.TestCase):
         self.hash_table.set(1, 'value 1')
         self.hash_table.set(1, 'new value 1')
         self.assertEqual(self.hash_table.get(1), 'new value 1')
+        self.assertEqual(self.hash_table.get(1), 'new value 2')
 
     def test_remove(self):
         self.hash_table.set(1, 'value 1')
